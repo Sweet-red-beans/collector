@@ -1,0 +1,65 @@
+.App {
+    text-align: center;
+    padding: 0px;
+    min-width: 1080px;
+    min-height: 1300px;
+    background-color: #f9f2ec;
+    position: relative;
+    padding-bottom: 250px;
+}
+
+.App button {
+    font-family: 'ROKAFSansBold';
+}
+
+.App .search input,
+.App select,
+.App option,
+.App textarea {
+    font-family: 'Pretendard-Regular';
+}
+
+.App::-webkit-scrollbar {
+    width: 15px;
+}
+
+.App::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'ROKAFSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+        format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,25 @@
+.DMListContainer {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    border: 1px solid #c4c4c4;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 800px;
+    padding: 25px;
+    overflow: auto;
+    left: 0px;
+}
+
+.DMListContainer::-webkit-scrollbar {
+    width: 15px;
+}
+
+.DMListContainer::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}

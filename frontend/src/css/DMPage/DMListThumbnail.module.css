@@ -1,0 +1,75 @@
+.thumbnail,
+.currentThumbnail {
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    border: #c4c4c4 1px solid;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    min-height: 80px;
+    background-color: white;
+}
+
+.currentThumbnail {
+    border: #5a5a5a 2px solid;
+    background-color: #f9f2ec;
+}
+
+.thumbnail > img,
+.currentThumbnail > img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    left: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.thumbnail > div,
+.currentThumbnail > div {
+    position: absolute;
+    display: inline-block;
+}
+
+.thumbnail > div:nth-child(2),
+.currentThumbnail > div:nth-child(2) {
+    left: 80px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* 닉네임 */
+.thumbnail > div:nth-child(2) > div:nth-child(1),
+.currentThumbnail > div:nth-child(2) > div:nth-child(1) {
+    font-size: 14px;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 최근 메시지 */
+.thumbnail > div:nth-child(2) > div:nth-child(2),
+.currentThumbnail > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 날짜 */
+.thumbnail > div:nth-child(3),
+.currentThumbnail > div:nth-child(3) {
+    text-align: right;
+    width: 70px;
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+    color: #c4c4c4;
+    font-family: 'Pretendard-Regular';
+}

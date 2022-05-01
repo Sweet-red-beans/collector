@@ -1,0 +1,136 @@
+.posts {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  font-family: 'ROKAFSansBold';
+  display: flex;
+  justify-content: space-between;
+}
+
+.dailyInfoPosts,
+.dailyGeneralPosts {
+  border: #c4c4c4 1px solid;
+  border-radius: 20px;
+  width: 480px;
+  min-height: 480px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.communityName {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.posts li {
+  padding: 30px 15px 0px 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts li div {
+  font-size: 16px;
+}
+
+.title {
+  cursor: pointer;
+  display: inline-block;
+  width: 280px;
+  font-size: 18px;
+  color: #5a5a5a;
+}
+
+.title:hover {
+  color: #f23333;
+  text-decoration: underline;
+}
+
+.countArea {
+  font-size: 14px;
+  color: #5a5a5a;
+  font-family: 'Pretendard-Regular';
+}
+
+.commentCount {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.commentCount::before {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: url('../../img/main-comment.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 50% 20%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.views {
+  display: inline-block;
+}
+
+.views::before {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: url('../../img/view.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 20%;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.nullMessage {
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.nullMessage > div:nth-child(1) {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  margin-left: 20px;
+  bottom: -5px;
+  background-color: transparent;
+  border-bottom: 2px black solid;
+  transition: width 200ms ease;
+}
+
+.arrow::after {
+  cursor: pointer;
+  position: absolute;
+  content: '';
+  display: inline-block;
+  right: -3px;
+  bottom: 9px;
+  width: 30px;
+  height: 2px;
+  margin-left: 0px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.arrow:hover {
+  width: 130px;
+}
+
+.nullMessage > div:nth-child(3) {
+  color: #5a5a5a;
+  font-size: 16px;
+}

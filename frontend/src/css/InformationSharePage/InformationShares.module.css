@@ -1,0 +1,112 @@
+.layout {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.infoBox {
+  width: 100%;
+  border-top: #f23333 3px solid;
+  font-size: 14px;
+}
+
+.topBar {
+  position: relative;
+  height: 45px;
+  border-bottom: #c4c4c4 1px solid;
+}
+
+.topBar div {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-family: 'Pretendard-Regular';
+}
+
+.topBar div:nth-child(1) {
+  left: 15px;
+}
+
+.topBar div:nth-child(2) {
+  left: 380px;
+  width: 100px;
+}
+
+.topBar div:nth-child(3) {
+  left: 500px;
+  width: 200px;
+}
+
+.topBar div:nth-child(4) {
+  right: 15px;
+  width: 50px;
+}
+
+.infoBox main {
+}
+
+.infoBox main article {
+  position: relative;
+  height: 45px;
+  border-bottom: #c4c4c4 1px solid;
+}
+
+.infoBox main article div {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(0%, -50%);
+  color: black;
+  font-family: 'Pretendard-Regular';
+}
+
+.infoBox main article div:nth-child(1) {
+  width: 330px;
+  text-align: left;
+  left: 15px;
+}
+
+.infoBox main article div:nth-child(1):hover {
+  text-decoration: underline;
+}
+
+.infoBox main article div:nth-child(2) {
+  left: 380px;
+  width: 100px;
+  color: #c4c4c4;
+  cursor: default;
+}
+
+.infoBox main article div:nth-child(3) {
+  left: 500px;
+  width: 200px;
+  color: #c4c4c4;
+  cursor: default;
+}
+
+.infoBox main article div:nth-child(4) {
+  right: 15px;
+  width: 50px;
+  color: #c4c4c4;
+  cursor: default;
+}
+
+.writeButtonArea {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.writeButtonArea button {
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 50px;
+  background-color: #f23333;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+}

@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    height: 50px;
+    border-bottom: #5a5a5a 1px solid;
+}
+
+.loginArea {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    bottom: 10px;
+}
+
+.title {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.title > button {
+    cursor: pointer;
+    border-style: none;
+    background-color: rgba(205, 92, 92, 0);
+    font-size: 30px;
+}
+
+.navigationBar {
+    position: absolute;
+    display: inline-block;
+    left: 150px;
+    bottom: 0px;
+    text-align: center;
+    vertical-align: middle;
+}

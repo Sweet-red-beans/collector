@@ -1,0 +1,236 @@
+.profileWhiteBox {
+  position: relative;
+  background-color: white;
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: 50px;
+  font-family: 'ROKAFSansBold';
+}
+
+/* 프로필 테두리 */
+.profileBox > div:nth-child(1) {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: #f23333 2px solid;
+}
+
+.profileBox > div:nth-child(1) > img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+/* 닉네임 */
+.profileBox > div:nth-child(2) {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 160px;
+  font-size: 16px;
+}
+
+/* 프로필 수정하기 버튼 */
+.profileBox > div:nth-child(3) {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 150px;
+  transform: translate(0, -50%);
+}
+
+.profileBox > div:nth-child(3) > button {
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f23333;
+  color: white;
+}
+
+/* 신뢰도 */
+.profileBox > div:nth-child(4) {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 40px;
+  transform: translate(0, -50%);
+}
+
+.profileBox > div:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: url('../../img/reliability.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  box-shadow: 0px 0px 7px rgba(90, 90, 90, 0.25);
+}
+
+@keyframes swing {
+  0% {
+  }
+  33% {
+    transform: rotate(3deg);
+  }
+  66% {
+    transform: rotate(-3deg);
+  }
+  100% {
+  }
+}
+
+.profileChangeBox > img,
+.nicknameChangeArea,
+.nicknameDupButton {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.profileChangeBox > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  left: 47px;
+  object-fit: cover;
+}
+
+.profileChangeBox > label {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 33%;
+  transform: translate(0, -50%);
+  left: 105px;
+  border: #c4c4c4 1px solid;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  background: url('../../img/plus.png');
+  background-color: white;
+  opacity: 0.8;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.profileChangeBox > .nicknameChangeArea {
+  width: 180px;
+  left: 158px;
+}
+
+/* 밑줄 */
+.nicknameChangeArea > div {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  margin-left: 50%;
+  width: calc(100%);
+  background: #f23333;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease, margin-left 0.3s ease;
+}
+
+.nicknameChangeArea > input {
+  border: none;
+  font-size: 16px;
+  width: 180px;
+  outline: none;
+  font-family: 'ROKAFSansBold';
+}
+
+.nicknameChangeArea > input:hover + div {
+  transform: scaleX(1);
+  margin-left: 0;
+}
+
+.nicknameChangeArea > input:focus + div {
+  transform: scaleX(1);
+  margin-left: 0;
+}
+
+.nicknameDupButton {
+  cursor: pointer;
+  left: 360px;
+  width: 130px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f23333;
+  color: white;
+  font-size: 16px;
+}
+
+.nicknameDupText {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  left: 158px;
+  top: 70%;
+  transform: translate(0, -50%);
+  color: #f23333;
+}
+
+.completeButton {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 75%;
+  transform: translate(0, -50%);
+  right: 110px;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f23333;
+  color: white;
+  font-size: 16px;
+}
+
+.cancelButton {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  top: 75%;
+  transform: translate(0, -50%);
+  right: 25px;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #c4c4c4;
+  color: #5a5a5a;
+  font-size: 16px;
+}

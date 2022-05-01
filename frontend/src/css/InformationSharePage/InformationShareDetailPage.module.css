@@ -1,0 +1,222 @@
+.whiteBox {
+    position: relative;
+    background-color: white;
+    border: 1px solid #c4c4c4;
+    padding: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.detailArea {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 800px;
+    border: #5a5a5a solid 2px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.titleArea {
+    font-size: 16px;
+    position: relative;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: #5a5a5a 2px solid;
+    background-color: #f32222;
+    height: 50px;
+}
+
+.titleArea div {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+    font-family: 'ROKAFSansBold';
+}
+
+/* 타이틀 */
+.titleArea div:nth-child(1) {
+    left: 20px;
+}
+
+/* 영화관 */
+.titleArea div:nth-child(2) {
+    right: 20px;
+}
+
+.topBar {
+    position: relative;
+    height: 40px;
+    border-bottom: #c4c4c4 1px solid;
+}
+
+.topBar div {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 16px;
+}
+
+/* 닉네임 */
+.topBar div:nth-child(1) {
+    left: 20px;
+    font-family: 'ROKAFSansBold';
+}
+
+/* 날짜 */
+.topBar div:nth-child(2) {
+    font-size: 12px;
+    width: 200px;
+    right: 30px;
+    color: #c4c4c4;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 조회수 아이콘 */
+.topBar div:nth-child(3)::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    top: 21px;
+    background: url('../../img/view.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* 조회수 */
+.topBar div:nth-child(3) {
+    vertical-align: middle;
+    right: 20px;
+    color: #c4c4c4;
+    font-size: 12px;
+    font-family: 'Pretendard-Regular';
+}
+
+.contentArea {
+    position: relative;
+    min-height: 200px;
+    font-size: 14px;
+    padding: 20px;
+    border-bottom: #5a5a5a 2px solid;
+}
+
+/* 이미지 */
+.contentArea div:nth-child(1) {
+    text-align: left;
+}
+
+/* 내용 */
+.contentArea div:nth-child(2) {
+    text-align: left;
+    white-space: pre-wrap;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 삭제 버튼 */
+.contentArea div:nth-child(3) {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.contentArea div:nth-child(3) > button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #f32222;
+    width: 50px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.commentArea > div:nth-child(1) {
+    padding: 10px 0px 0px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: left;
+    height: 45px;
+    border-bottom: #c4c4c4 1px solid;
+    font-family: 'ROKAFSansBold';
+}
+
+.commentArea > div:nth-child(1)::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    width: 26px;
+    height: 22px;
+    margin-right: 10px;
+    background: url('../../img/commentarrow.png');
+}
+
+.commentWriteArea {
+    position: relative;
+    height: 70px;
+}
+
+/* 댓글 작성 */
+.commentWriteArea > input {
+    position: absolute;
+    width: 680px;
+    height: 40px;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    border: #c4c4c4 1px solid;
+    background-color: #f0f0f0;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
+
+.commentWriteArea > input::placeholder {
+    color: #5a5a5a;
+}
+
+.commentWriteArea > input:focus {
+    border: #5a5a5a 1px solid;
+    background-color: white;
+}
+
+.commentWriteArea > button {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: url('../../img/pen.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+    background-color: #f32222;
+}
+
+.preButton button {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #f32222;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}

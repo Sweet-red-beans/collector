@@ -1,0 +1,56 @@
+.videoArea {
+    background-color: black;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.video {
+    width: 1000px;
+    height: 500px;
+}
+
+.mainText {
+    cursor: default;
+    margin: 0 auto;
+    text-align: left;
+    width: 1000px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: 'ROKAFSansBold';
+}
+
+.arrow {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    bottom: -5px;
+    background-color: transparent;
+    border-bottom: 2px black solid;
+    transition: width 200ms ease;
+}
+
+.arrow::after {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    display: inline-block;
+    right: -3px;
+    bottom: 9px;
+    width: 30px;
+    height: 2px;
+    margin-left: 0px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.arrow:hover {
+    width: 130px;
+}
+
+.movieThumbnail {
+    margin: 0 auto;
+    width: 1000px;
+}

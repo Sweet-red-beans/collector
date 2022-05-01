@@ -1,0 +1,99 @@
+.whiteBox {
+    position: relative;
+    background-color: white;
+    width: 1000px;
+    min-height: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-top: 50px;
+    font-family: 'ROKAFSansBold';
+}
+
+.signupArea {
+    width: 320px;
+    margin: 0 auto;
+}
+.signUpText {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.inputArea {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.inputArea > label > div {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.dupInputText {
+    width: 190px;
+    height: 50px;
+    border: #c4c4c4 1px solid;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 5px;
+    font-family: 'Pretendard-Regular';
+}
+
+.dupInputText:focus {
+    border: #5a5a5a 2px solid;
+}
+
+.dupChkButton {
+    cursor: pointer;
+    color: white;
+    width: 115px;
+    height: 50px;
+    font-size: 14px;
+    background-color: #f23333;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.errormessage {
+    font-size: 12px;
+    color: #f23333;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Pretendard-Regular';
+}
+
+.inputText {
+    width: 320px;
+    height: 50px;
+    border: #c4c4c4 1px solid;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 5px;
+    font-family: 'Pretendard-Regular';
+}
+
+.inputText:focus {
+    border: #5a5a5a 2px solid;
+}
+
+.joinButton {
+    cursor: pointer;
+    width: 320px;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    background-color: #f23333;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
