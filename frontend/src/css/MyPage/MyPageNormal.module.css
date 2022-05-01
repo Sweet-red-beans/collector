@@ -1,0 +1,163 @@
+/* 카테고리 */
+.detailMenuArea {
+  position: relative;
+  background-color: transparent;
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.detailMenuArea > nav {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'ROKAFSansBold';
+}
+
+.detailMenuArea > nav li {
+  position: absolute;
+  display: inline-block;
+  margin-bottom: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 16px;
+  transition: color 200ms ease;
+  color: #5a5a5a;
+}
+
+.detailMenuArea > nav li:nth-child(1) {
+  left: 10px;
+}
+
+.detailMenuArea > nav li:nth-child(2) {
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.detailMenuArea > nav li:nth-child(3) {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.detailMenuArea > nav li:nth-child(4) {
+  right: 28%;
+  transform: translate(50%, -50%);
+}
+
+.detailMenuArea > nav li:nth-child(5) {
+  right: 10px;
+}
+
+.detailMenuArea > nav li > button {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border: none;
+  margin-bottom: 20px;
+  transition: transform 300ms ease, background 200ms ease;
+}
+
+.detailMenuArea > nav li:nth-child(1):hover > button {
+  background: url('../../img/my-events-red.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(1) > button {
+  background: url('../../img/my-events.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(2):hover > button {
+  background: url('../../img/my-transactions-red.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(2) > button {
+  width: 90px;
+  background: url('../../img/my-transactions.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(3):hover > button {
+  background: url('../../img/my-like-transactions-red.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(3) > button {
+  background: url('../../img/my-like-transactions.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(4):hover > button {
+  background: url('../../img/my-posts-red.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(4) > button {
+  background: url('../../img/my-posts.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(5):hover > button {
+  background: url('../../img/my-comments-red.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:nth-child(5) > button {
+  background: url('../../img/my-comments.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detailMenuArea > nav li:hover > button {
+  transform: scale(1.2);
+}
+
+.detailMenuArea > nav li:hover {
+  cursor: pointer;
+  color: #f23333;
+}
+
+.detail {
+  position: relative;
+  background-color: white;
+  width: 1000px;
+  min-height: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  padding: 30px;
+  font-family: 'Pretendard-Regular';
+}
+
+.detail > footer {
+  display: flex;
+}
+
+.quitArea {
+  margin-top: 50px;
+}
+
+.quitArea > button {
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #c4c4c4;
+}
+
+.quitArea > button:hover {
+  text-decoration: underline;
+}

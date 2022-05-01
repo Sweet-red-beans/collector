@@ -1,0 +1,220 @@
+.whiteBox {
+    position: relative;
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    padding: 100px 100px 50px 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.titleArea {
+    position: relative;
+    text-align: left;
+    background-color: aqua;
+}
+
+/* 제목 */
+.titleArea input {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    bottom: 0px;
+    box-sizing: border-box;
+    padding: 0px 20px 0px 20px;
+    outline: none;
+    border: #c4c4c4 1px solid;
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    /* background-color: #F0F0F0; */
+}
+
+.titleArea input:focus {
+    border: #5a5a5a 2px solid;
+    background-color: white;
+}
+
+.titleArea input::placeholder {
+    color: #c4c4c4;
+}
+
+.filterArea {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: inline-block;
+}
+
+.filter {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    border-bottom: 3px solid #c4c4c4;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.filter > select {
+    font-size: 14px;
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 0 8px;
+    position: relative;
+    z-index: 3;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.filter > select > option {
+    color: #5a5a5a;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+}
+
+.filterArrow {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    transition: transform 300ms ease-in-out;
+    background: url('../../img/down-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 50%;
+}
+
+.filter > select:focus + .filterArrow {
+    transform: rotate(180deg);
+}
+
+.filter:nth-child(2) {
+    width: 130px;
+}
+
+.filter:nth-child(3) {
+    width: 160px;
+}
+
+.filter:nth-child(3) > select {
+    width: 140px;
+}
+
+.contentArea {
+    margin-top: 30px;
+}
+
+.contentArea > textarea {
+    width: 800px;
+    height: 350px;
+    border-radius: 10px;
+    border: #c4c4c4 1px solid;
+    outline: none;
+    box-sizing: border-box;
+    padding: 20px;
+    resize: none;
+    font-size: 14px;
+}
+
+.contentArea > textarea:focus {
+    border: #5a5a5a 2px solid;
+}
+
+.contentArea > textarea::placeholder {
+    color: #c4c4c4;
+}
+
+.contentArea > textarea::-webkit-scrollbar {
+    width: 15px;
+}
+
+.contentArea > textarea::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+.buttonArea {
+    position: relative;
+    height: 120px;
+}
+
+.buttonArea > * {
+    position: absolute;
+    display: inline-block;
+}
+
+.buttonArea > label {
+    cursor: pointer;
+    background: url('../../img/gallery.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% 50%;
+    background-color: #f32222;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.buttonArea > div {
+    left: 70px;
+    bottom: 0px;
+}
+
+.buttonArea > div > img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.buttonArea > div > button {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #c4c4c4;
+    margin-top: -5px;
+    background: url('../../img/x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-color: transparent;
+}
+
+.buttonArea > button {
+    cursor: pointer;
+    bottom: 0px;
+    right: 0px;
+    background-color: #f32222;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+}

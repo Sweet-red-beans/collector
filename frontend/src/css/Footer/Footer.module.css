@@ -1,0 +1,138 @@
+.footer {
+    background-color: #5a5a5a;
+    height: 150px;
+    width: 100%;
+}
+
+.github,
+.mailArea {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.github > * {
+    width: 30px;
+    height: 30px;
+    fill: #c4c4c4;
+}
+
+.mail {
+    background-color: #c4c4c4;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+/* .mail > *:last-child {
+    width: 15px;
+    height: 30px;
+} */
+
+/* .mail.active::before {
+    content: "";
+    width: 100px;
+    height: 30px;
+    background-color: #C4C4C4;
+    position: absolute;
+    border-radius: 10px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.message {
+    display: none;
+    z-index: 3;
+    min-width: 80px;
+    height: 40px;
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    position: absolute;
+    top: -260%;
+    left: 50%;
+    transform: translate(-55%, 0%);
+    font-size: 14px;
+    color: #5a5a5a;
+    font-family: 'ROKAFSansBold';
+    animation: copy-show 0.3s;
+}
+
+@keyframes copy-show {
+    from {
+        opacity: 0;
+        margin-top: 5px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.message::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid #c4c4c4;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    background-color: transparent;
+    position: absolute;
+    bottom: -30%;
+}
+
+.message.active {
+    display: block;
+}
+
+.message > div {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.mail > *:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    fill: #5a5a5a;
+}
+.team {
+    cursor: default;
+    font-size: 20px;
+    color: #c4c4c4;
+    font-family: 'ROKAFSansBold';
+}
+
+.member > button {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+    font-size: 14px;
+    color: #c4c4c4;
+    font-family: 'Pretendard-Regular';
+}
+
+.member > button:hover {
+    text-decoration: underline;
+}
+
+.member > button:not(:last-of-type)::after {
+    content: '';
+    width: 1px;
+    height: 14px;
+    background-color: #c4c4c4;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}

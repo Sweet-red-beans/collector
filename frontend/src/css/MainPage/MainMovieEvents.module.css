@@ -1,0 +1,39 @@
+.cinemaName {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-left: -870px;
+  font-size: 20px;
+  z-index: 5;
+  font-family: 'ROKAFSansBold';
+}
+
+.underline {
+  display: inline-block;
+  z-index: 0;
+  position: absolute;
+  content: '';
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 120%;
+  height: 5px;
+  background-color: #f23333;
+  border-radius: 10px;
+}
+
+.movieThumbnails {
+  margin-bottom: 50px;
+}
+
+.nullEvents {
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #5a5a5a;
+  font-family: 'ROKAFSansBold';
+}

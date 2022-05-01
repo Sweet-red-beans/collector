@@ -1,0 +1,172 @@
+.whiteBox {
+    position: relative;
+    background-color: white;
+    width: 1000px;
+    min-height: 1400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.topBar {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.datefilter {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.filter {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+
+.selected,
+.notSelected {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    margin-left: 5px;
+    transition: transform 200ms ease;
+}
+
+.notSelected:hover {
+    transform: scale(1.2);
+}
+
+.selected {
+    cursor: default;
+    font-size: 18px;
+    color: #f23333;
+}
+.selected::before {
+    display: inline-block;
+    margin-right: 5px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url('../../img/check.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cinemafilter {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    border-bottom: 3px solid #c4c4c4;
+    margin-left: 30px;
+}
+
+.cinemafilter > select {
+    font-size: 14px;
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 0 8px;
+    position: relative;
+    z-index: 3;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.cinemafilter > select > option {
+    color: #5a5a5a;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+}
+
+.filterArrow {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    transition: transform 300ms ease-in-out;
+    background: url('../../img/down-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 50% 50%;
+}
+
+.cinemafilter > select:focus + .filterArrow {
+    transform: rotate(180deg);
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    width: 200px;
+    height: 45px;
+    margin-left: 30px;
+    border-bottom: 3px solid #c4c4c4;
+    vertical-align: bottom;
+    right: 0px;
+    bottom: 0px;
+}
+
+.search input {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 170px;
+    height: 35px;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+    transition: border-bottom 200ms ease;
+}
+
+.search input::placeholder {
+    color: #c4c4c4;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.underline {
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: #f23333;
+    bottom: -3px;
+    transition: width 300ms ease;
+}
+.search input:focus + .underline {
+    width: 200px;
+}
+
+.search button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-0%, 50%);
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background: url('../../img/search.png');
+    background-size: cover;
+    border: 0 none;
+    outline: 0 none;
+    background-color: white;
+}

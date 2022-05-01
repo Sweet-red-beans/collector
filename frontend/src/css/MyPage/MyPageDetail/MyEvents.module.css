@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: left;
+  min-height: 1100px;
+}
+
+.container > article {
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+}
+
+.container > article > div {
+  display: inline-block;
+}

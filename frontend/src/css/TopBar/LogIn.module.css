@@ -1,0 +1,81 @@
+/* .loginArea{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: -30px;
+    margin-top: 0px;
+} */
+
+.loginButton {
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    background-color: transparent;
+    font-family: 'ROKAFSansBold';
+}
+
+.loginButton:hover {
+    text-decoration: underline;
+}
+
+.inputText {
+    width: 285px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: #c4c4c4 1px solid;
+    border-radius: 5px;
+}
+
+.errormessage {
+    font-size: 0.85rem;
+    color: #f23333;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 85px;
+    margin-top: -5px;
+    font-family: 'Pretendard-Regular';
+}
+
+.innerloginButton {
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    background-color: #f23333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.signupButton {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 80px;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-family: 'ROKAFSansBold';
+    margin-left: -220px;
+}
+
+.kakaologinButton,
+.googleloginButton {
+    cursor: pointer;
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.kakaologinButton {
+    background-color: #fae100;
+}
+
+.googleloginButton {
+    background-color: black;
+    color: white;
+}

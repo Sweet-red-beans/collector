@@ -1,0 +1,20 @@
+.dmpage {
+    position: relative;
+    /* background-color: white;
+    border: 1px solid #C4C4C4; */
+    width: 1000px;
+    /* height: 800px; */
+    margin: 0 auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    font-family: 'ROKAFSansBold';
+}
+
+.dmpage > * {
+    position: absolute;
+}
+
+.dmpage > div:nth-child(2) {
+    right: 0px;
+}

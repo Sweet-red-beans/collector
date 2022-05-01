@@ -1,0 +1,324 @@
+.modal {
+    text-align: center;
+}
+
+.modal > div:nth-child(1) {
+    text-align: left;
+    padding: 10px 0px 10px 30px;
+    font-size: 16px;
+}
+
+.modal > div > textarea {
+    width: 520px;
+    height: 200px;
+    resize: none;
+    outline: none;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: #c4c4c4 1px solid;
+    font-size: 14px;
+}
+
+.modal > div > textarea:focus {
+    border: #5a5a5a 2px solid;
+}
+
+.modal > button {
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #f23333;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 50px;
+    width: 110px;
+}
+
+.chatcontainer {
+    position: relative;
+    display: inline-block;
+    width: 610px;
+    border: 2px solid #5a5a5a;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 800px;
+    background-color: white;
+}
+
+.topBar {
+    position: relative;
+    height: 50px;
+    border-radius: 17px 17px 0px 0px;
+    background-color: #f32222;
+    border-bottom: #5a5a5a 2px solid;
+}
+
+.topBar::before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    background: url('../../img/chat.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.notMyArea {
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    background-color: #f9f2ec;
+    border-bottom: #5a5a5a 2px solid;
+    text-align: left;
+}
+
+.notMyArea > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.notMyArea > img {
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.nonePorfile {
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #5a5a5a;
+}
+
+/* 상대방 닉네임 */
+.notMyArea > div:nth-child(2) {
+    left: 90px;
+    font-size: 18px;
+}
+
+.notMyArea > div:nth-child(3)::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    background: url('../../img/reliability.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    box-shadow: 0px 0px 7px rgba(90, 90, 90, 0.25);
+    background-color: white;
+}
+
+/* 신뢰도 */
+.notMyArea > div:nth-child(3) {
+    left: 300px;
+    font-size: 14px;
+}
+
+.notMyArea > div:nth-child(4) {
+    top: 50%;
+    transform: translate(0%, -50%);
+    position: absolute;
+    right: 0px;
+}
+
+.notMyArea > div:nth-child(4) > button {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    background-color: #f32222;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.messagebox {
+    box-sizing: border-box;
+    height: 600px;
+    overflow: auto;
+    border-bottom: #5a5a5a 2px solid;
+}
+
+.messagebox2 {
+    box-sizing: border-box;
+    height: 560px;
+    overflow: auto;
+    border-bottom: #5a5a5a 2px solid;
+}
+
+.messagebox::-webkit-scrollbar,
+.messagebox2::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+.messagebox::-webkit-scrollbar-thumb,
+.messagebox2::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+.preview div {
+    position: relative;
+    text-align: left;
+    padding: 10px;
+    height: 100px;
+    border-top: #5a5a5a 2px solid;
+    background-color: white;
+}
+
+.preview div > img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.preview div > button {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #c4c4c4;
+    background: url('../../img/x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-color: transparent;
+}
+
+.writeArea {
+    position: relative;
+    height: 70px;
+}
+
+.writeArea > * {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.writeArea > input {
+    width: 430px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: #5a5a5a 2px solid;
+    box-sizing: border-box;
+    padding-left: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fbc2c2;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
+
+.writeArea > input:focus {
+    background-color: white;
+}
+
+/* 사진 첨부 */
+.writeArea > label {
+    cursor: pointer;
+    left: 20px;
+    border: #5a5a5a 2px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: url('../../img/gallery-gray.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% 50%;
+    background-color: #fbc2c2;
+}
+
+/* 전송 버튼 */
+.writeArea > button {
+    cursor: pointer;
+    right: 20px;
+    background: url('../../img/send.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 40% 50%;
+    background-color: #fbc2c2;
+    border: #5a5a5a 2px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.complete {
+    border-bottom: #5a5a5a 2px solid;
+    padding: 10px;
+    font-size: 16px;
+    color: #f32222;
+}
+
+.myMessage {
+    text-align: right;
+    margin: 10px;
+}
+
+.notMyMessage {
+    text-align: left;
+    margin: 10px;
+}
+
+/* 메시지 내용 */
+.myMessage > div:nth-child(2),
+.notMyMessage > div:nth-child(2) {
+    display: inline-block;
+    padding: 20px;
+    max-width: 350px;
+    border: #5a5a5a 1px solid;
+    font-size: 14px;
+    font-family: 'Pretendard-Regular';
+}
+
+.myMessage > div:nth-child(2) {
+    border-radius: 30px 10px 30px 30px;
+    background-color: #fbc2c2;
+}
+
+.notMyMessage > div:nth-child(2) {
+    border-radius: 10px 30px 30px 30px;
+    background-color: #f9f2ec;
+}
+
+/* 날짜 */
+.myMessage > div:nth-child(1),
+.notMyMessage > div:nth-child(3) {
+    display: inline-block;
+    margin: 10px;
+    font-size: 12px;
+    vertical-align: bottom;
+    color: #c4c4c4;
+    font-family: 'Pretendard-Regular';
+}
+
+.myMessage > div:nth-child(2) img,
+.notMyMessage > div:nth-child(2) img {
+    object-fit: cover;
+    max-width: 350px;
+    max-height: 350px;
+}
